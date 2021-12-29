@@ -1,4 +1,4 @@
-import styles from '../styles/App.module.scss';
+// import styles from '../styles/App.module.scss';
 import {Actions} from "../components/Actions/Actions";
 import {useState} from "react";
 import {DEFAULT_STATUS_OBJ} from "../constants/constants";
@@ -14,9 +14,15 @@ export const App = () => {
         <Actions statusObj={statusObj} setStatusObj={setStatusObj} setUsers={setUsers} />
 
         {statusObj.status === 'LOADING' ?
-        <img className={styles.spinner} alt="loading..." src="/spinner.gif" loading="lazy" />
+        <img className="" alt="loading..." src="/spinner.gif" loading="lazy" style={{
+            width: '20rem',
+            margin: 'auto',
+            display: 'block',
+        }} />
         :
-            <div className={styles.cards}>
+            <div className="" style={{
+                display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem'
+            }}>
                 {users.map(user => <Card key={user.id} avatar_url={user.avatar_url} login={user.login}/>)}
             </div>}
     </div>

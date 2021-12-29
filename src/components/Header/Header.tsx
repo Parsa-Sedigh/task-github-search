@@ -1,4 +1,3 @@
-import styles from './Header.module.scss';
 import {Link} from "react-router-dom";
 
 export const Header = () => {
@@ -8,14 +7,14 @@ export const Header = () => {
                 <i className="fa fa-github mr-05"></i>
                 Github Search
             </h1>
-            <ul className={styles.header__list}>
-                <li className={styles.header__item}>
-                    <Link to="/" className={styles.header__link}>Home</Link>
+            <ul className="">
+                <li className="">
+                    <Link to="/" className="">Home</Link>
 
                 </li>
 
-                <li className={styles.header__item}>
-                    <Link to="/about" className={styles.header__link}>About</Link>
+                <li className="">
+                    <Link to="/about" className="">About</Link>
                 </li>
 
             </ul>
