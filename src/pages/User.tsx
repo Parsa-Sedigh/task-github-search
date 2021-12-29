@@ -57,7 +57,7 @@ export const User = () => {
             :
                 <>
                     <Link className="btn btn-light" to="/">Back To Search</Link>
-                    <span>hireable : {userInfo.hireable ? <i className="fa fa-times text-success"></i> : <i className="fa fa-times text-danger"></i>} </span>
+                    <span>hireable : {userInfo.hireable ? <i className="fa fa-check text-success"></i> : <i className="fa fa-times text-danger"></i>} </span>
 
                     <UserBio bio={userInfo.bio}
                              avatarUrl={userInfo.avatar_url}
