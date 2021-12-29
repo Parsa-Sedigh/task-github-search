@@ -31,7 +31,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  //font-size: 62.5%;
+  font-size: 100%;
   @include respond(tab-land) {
     font-size: 56.25%;
   }
@@ -41,7 +42,8 @@ html {
   }
 
  @include respond(phone) {
-      font-size: 50%;
+      //font-size: 50%;
+   font-size: 100%;
     }
 
   @include respond(big-desktop) {

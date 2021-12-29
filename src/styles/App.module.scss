@@ -3,4 +3,14 @@
   padding: 0 2rem;
 }
 
+.spinner {
+  width: 20rem;
+  margin: auto;
+  display: block;
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
