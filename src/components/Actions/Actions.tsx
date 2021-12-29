@@ -31,6 +31,7 @@ export const Actions = ({statusObj, setStatusObj, setUsers}: IActionsProps) => {
 
         setStatusObj({status: 'LOADING', message: ''});
         const searchInputValue = event.target[0].value;
+        inputRef.current.value = '';
         console.log('inputRef: ', inputRef)
         try {
             const response = await getUsers({query: inputValue});
@@ -48,7 +49,8 @@ export const Actions = ({statusObj, setStatusObj, setUsers}: IActionsProps) => {
 
     const onClear = () => {
         console.log('onClear')
-        inputRef.current.value = '';
+        // inputRef.current.value = '';
+        setUsers([]);
     };
 
     return (
