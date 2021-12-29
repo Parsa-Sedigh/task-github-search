@@ -1,3 +1,5 @@
+@use "../styles/index";
+
 .container {
   margin: 0 10rem;
   padding: 0 2rem;
@@ -13,4 +15,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @include index.respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include index.respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
 }

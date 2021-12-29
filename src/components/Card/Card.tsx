@@ -2,9 +2,9 @@ import styles from './Card.module.scss';
 import {IUser} from "../../types/interfaces";
 import {Link} from "react-router-dom";
 
-type tCardProps = Pick<IUser, 'avatar_url' | 'login'>;
+type TCardProps = Pick<IUser, 'avatar_url' | 'login'>;
 
-export const Card = ({avatar_url, login}: tCardProps) => {
+export const Card = ({avatar_url, login}: TCardProps) => {
     return (
         <div className={`${styles.card} text-center`}>
             <img src={avatar_url} alt={login} className="round-img" loading="lazy" style={{width: '50px'}}/>
